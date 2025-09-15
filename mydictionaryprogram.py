@@ -33,7 +33,7 @@ for x in actualdata:
 nesteddict={}
 
 for key,value in newdict.items():
-    nesteddict["key"]={
+    nesteddict[key]={
         "name" : value[0],
         "mailid" : value[1],
         "mobileno" : value[2],
@@ -41,8 +41,12 @@ for key,value in newdict.items():
 
     }
 
-print(nesteddict)
-{'key': {'name': 'Chen Wei', 'mailid': 'chen.wei@example.com', 'mobileno': '555-3456', 'country': 'China '}}
+#nested dict
+#print(nesteddict)
+#{'key': {'name': 'Chen Wei', 'mailid': 'chen.wei@example.com', 'mobileno': '555-3456', 'country': 'China '}}
+
+print(nesteddict.get("1").get("mobileno"))
+
 
 
 
