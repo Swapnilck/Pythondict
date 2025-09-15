@@ -1,10 +1,10 @@
 
-
+#this is raw data
 custdata:str= """CustomerID,Name,Email,Phone,Country
-1,John Doe,john.doe@example.com,555-1234,USA
-2,Jane Smith,jane.smith@example.com,555-5678,Canada
-3,Ali Khan,ali.khan@example.com,555-8765,UK
-4,Maria Garcia,maria.garcia@example.com,555-4321,Spain
+1,anil,anil.doe@example.com,555-1234,USA
+2,sunil Smith,sunil.smith@example.com,555-5678,Canada
+3,Aman gaman,aman.gaman@example.com,555-8765,UK
+4,Maria d,maria.d@example.com,555-4321,Spain
 5,Chen Wei,chen.wei@example.com,555-3456,China """
 
 #headerdata
@@ -46,6 +46,7 @@ for key,value in newdict.items():
 #{'key': {'name': 'Chen Wei', 'mailid': 'chen.wei@example.com', 'mobileno': '555-3456', 'country': 'China '}}
 
 print(nesteddict.get("1").get("mobileno"))
+
 
 
 
