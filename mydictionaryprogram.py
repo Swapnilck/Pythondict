@@ -49,10 +49,35 @@ for key,value in newdict.items():
 
 #print(nesteddict.get("1"))
 
-id=input("enter teh customer_id  :")
-details=input("enter what details u want  :")
+#id=input("enter teh customer_id  :")
+#details=input("enter what details u want  :")
 
-print(nesteddict.get(id).get(details))
+#print(nesteddict.get(id).get(details))
+
+order_data = """101,Laptop,1,1200
+102,Smartphone,2,800
+103,Headphones,3,150
+104,Monitor,4,300
+105,Keyboard,5,70"""
+
+order=order_data.split("\n")
+
+
+combinelist=[]
+
+for x in order:
+    border=x.split(",")
+    combinelist.append((border[0],border[1],border[2],border[3],newdict[border[2]]))  #combine order and dict
+
+print(combinelist)
+
+#[('101', 'Laptop', '1', '1200', ('anil', 'anil.doe@example.com', '555-1234', 'USA'))
+
+
+
+
+
+
 
 
 
