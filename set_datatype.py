@@ -42,7 +42,11 @@ common=a.intersection(b)
 print(common)     #{'ac', 'ad'}
 
 
+week1_tasks = {"task1", "task2", "task3"}
+week2_tasks = {"task3", "task4", "task5"}
 
+all_tasks = week1_tasks.union(week2_tasks)
+new_tasks = week2_tasks.difference(week1_tasks)
 
-
-
+print("All tasks:", all_tasks)
+print("New tasks:", new_tasks)
