@@ -5,3 +5,5 @@ with open('C:/Users/dell/Documents/item.csv.txt', 'r') as file:
       cities= line.strip().split(",")[4]
       citylist.append(cities)
 print(citylist)
+
+newset=set(citylist)
